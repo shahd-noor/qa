@@ -4,23 +4,33 @@ import java.util.Scanner;
 
 public class Calculate {
 
+
+
 	 public static void main(String[] args)
 	   {
+
 	      float a, b, res;
 	      float x, y, z;
 	      int choice;
+              int *n;
+              *n = n+1;
+
 	      Scanner scan = new Scanner(System.in);
 	      System.out.println("Please enter 3 num ");
+                 x = scan.nextFloat();
+	         y = scan.nextFloat();
+                 z = scan.nextFloat();
+
 	       if(x==0 && (x/y)>z ) {
-	       System.out.println("WELCOM");  
-	       }
-	       else {
+	       System.out.println("WELCOM /n");  
+	
 	      System.out.println("1. Addition");
 	      System.out.println("2. Subtraction");
 	      System.out.println("3. Multiplication");
 	      System.out.println("4. Division");
 	      System.out.print("Enter Your Choice (1-4): ");
 	      choice = scan.nextInt();
+
 	   
 	      if(choice>=1 && choice<=4)
 	      {
@@ -44,5 +54,13 @@ public class Calculate {
 	     
 	   }
 	       }
+else 
+          if((a==2)&&(b==2)||(c==3)){
+          System.out.println("Done");
+
+            }
+           else
+           System.out.println("Invalid,please Try again!");
+
 	 
   }
